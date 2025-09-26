@@ -12,6 +12,8 @@ public final class FarmUtils {
 
   private static final int BARN_CAPACITY = 20;
 
+  private static final int FARM_CAPACITY = 5;
+
   public static String animalName(int value) {
     return String.format(ANIMAL_NAME, value);
   }
@@ -22,6 +24,10 @@ public final class FarmUtils {
 
   public static Integer barnCapacity() {
     return BARN_CAPACITY;
+  }
+
+  public static Integer farmCapacity() {
+    return FARM_CAPACITY;
   }
 
   private FarmUtils() {}
