@@ -17,7 +17,7 @@ which is located at `com.logicgate.farm.service`. The implementing class, `Anima
 next to the interface and lined with TODOs. In addition to adding code to the service class, you may want to add some
 additional methods to both the `FarmRepository` and `AnimalRepository` which can be located at
 `com.logicgate.farm.repository`. While the service implementation can be completed successfully without doing so
-and relying exclusively on the repositories' inherited methods (e.g. `findAll()`, `getOne()`, `save()`, and `delete()`)
+and relying exclusively on the repositories' inherited methods (e.g. `findAll()`, `getReferenceById()`, `save()`, and `delete()`)
 your solution may be cleaner and/or more efficient by adding repository methods. Your solution should not need any type of nested iteration. 
 
 

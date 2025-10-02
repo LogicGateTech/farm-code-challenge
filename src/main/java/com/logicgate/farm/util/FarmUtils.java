@@ -30,6 +30,7 @@ public final class FarmUtils {
     return FARM_CAPACITY;
   }
 
-  private FarmUtils() {}
+  private FarmUtils() {
+  }
 
 }
