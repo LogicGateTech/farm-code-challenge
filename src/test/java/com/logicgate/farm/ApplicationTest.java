@@ -6,13 +6,10 @@ import com.logicgate.farm.domain.Color;
 import com.logicgate.farm.repository.BarnRepository;
 import com.logicgate.farm.service.AnimalService;
 import com.logicgate.farm.util.FarmUtils;
-
-import org.junit.After;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Collections;
 import java.util.List;
@@ -28,7 +25,6 @@ import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.lessThanOrEqualTo;
 
 @SpringBootTest
-@RunWith(SpringRunner.class)
 public class ApplicationTest {
 
   private static final int ANIMAL_SEED = 1000;
@@ -39,7 +35,7 @@ public class ApplicationTest {
   @Autowired
   private AnimalService animalService;
 
-  @After
+  @AfterEach
   public void tearDown() {
     animalService.deleteAll();
     barnRepository.deleteAll();

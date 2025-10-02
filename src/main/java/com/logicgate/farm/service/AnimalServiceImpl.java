@@ -3,7 +3,6 @@ package com.logicgate.farm.service;
 import com.logicgate.farm.domain.Animal;
 import com.logicgate.farm.repository.AnimalRepository;
 import com.logicgate.farm.repository.BarnRepository;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -53,6 +52,6 @@ public class AnimalServiceImpl implements AnimalService {
 
   @Override
   public void removeFromFarm(List<Animal> animals) {
-    animals.forEach(animal -> removeFromFarm(animalRepository.getOne(animal.getId())));
+    animals.forEach(animal -> removeFromFarm(animalRepository.getReferenceById(animal.getId())));
   }
 }
