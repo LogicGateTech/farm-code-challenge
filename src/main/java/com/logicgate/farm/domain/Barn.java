@@ -1,15 +1,14 @@
 package com.logicgate.farm.domain;
 
 import com.logicgate.farm.util.FarmUtils;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 import java.io.Serializable;
-import java.util.Optional;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import java.util.Objects;
 
 @Entity(name = "barn")
 public class Barn implements Serializable {
@@ -62,8 +61,7 @@ public class Barn implements Serializable {
 
   @Override
   public boolean equals(Object obj) {
-    return Optional.ofNullable(obj).isPresent()
-      && (obj == this || (obj.getClass() == getClass() && ((Barn) obj).getId().equals(getId())));
+    return this == obj || (obj instanceof Barn that && Objects.equals(id, that.id));
   }
 
 }

@@ -1,7 +1,6 @@
 package com.logicgate.farm.repository;
 
 import com.logicgate.farm.domain.Animal;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
