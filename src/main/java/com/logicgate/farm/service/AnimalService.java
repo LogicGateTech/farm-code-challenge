@@ -24,8 +24,8 @@ public interface AnimalService {
   void deleteAll();
 
   /**
-   * An animal moves to the farm. The new animal must have a barn to inhabitate and the barn must match the animal's
-   * favorite color. If no such barn exists, then a new barn must be built to accomodate the animal. When a new barn is
+   * An animal moves to the farm. The new animal must have a barn to inhabit and the barn must match the animal's
+   * favorite color. If no such barn exists, then a new barn must be built to accommodate the animal. When a new barn is
    * created it will be empty and have a capacity of 20 animals. No barn may house an amount of animals that exceed the
    * barn's capacity. Animals must be distributed between barns of the same color to allow for as much extra space
    * as possible with in each barn in order to optimize animal happiness. Keep in mind that when a new barn is added it
@@ -53,8 +53,8 @@ public interface AnimalService {
    *
    * <p>
    * Take the above example where animals are added to a farm with a single yellow barn. Since the barn already has 20
-   * animals inhabitants, a new barn must get created to accomodate the new animal. The animals are redistributed
-   * to maximize available space within the barn. When a second animal is added there is enough capacity to accomodate
+   * animals inhabitants, a new barn must get created to accommodate the new animal. The animals are redistributed
+   * to maximize available space within the barn. When a second animal is added there is enough capacity to accommodate
    * the new animal so no new barns need to be created, but the animal must be added to the barn with fewer inhabitants
    * so the available space continues to be optimized across barns.
    * </p>
@@ -73,10 +73,10 @@ public interface AnimalService {
   void addToFarm(List<Animal> animals);
 
   /**
-   * An animal is moving to another farm. Afterwards, barns may need to be reorganized. Barns of the same
+   * An animal is moving to another farm. Afterward, barns may need to be reorganized. Barns of the same
    * color should always have an evenly distributed number of animal inhabitants to maximize animal happiness. However,
-   * if consolodation allows for all remaining animals of a particular color to be housed in fewer barns while
-   * remaining below capacity, then consolodation must occur and the extra barn should be destroyed.
+   * if consolidation allows for all remaining animals of a particular color to be housed in fewer barns while
+   * remaining below capacity, then consolidation must occur and the extra barn should be destroyed.
    *
    * <p>
    *    Barns [

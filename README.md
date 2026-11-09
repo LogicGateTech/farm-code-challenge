@@ -64,7 +64,6 @@ The following documentation may be helpful as you dig into the case.
 - [Spring Data JPA Repositories](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.repositories)
 - [Accessing Data With JPA](https://spring.io/guides/gs/accessing-data-jpa/)
 - [Barn Docs](https://en.wikipedia.org/wiki/Barn)
-- [Goat Docs](https://twitter.com/EverythingGoats)
 
 
 ---
