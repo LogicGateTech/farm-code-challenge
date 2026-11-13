@@ -2,10 +2,11 @@ package com.logicgate.farm.controller;
 
 import com.logicgate.farm.domain.Animal;
 import com.logicgate.farm.service.AnimalService;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 public class AnimalController {
